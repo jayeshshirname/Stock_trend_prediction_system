@@ -1,0 +1,10 @@
+flask
+gunicorn
+numpy
+pandas
+matplotlib
+scikit-learn
+yfinance
+tensorflow==2.12.0
+keras==2.12.0
+h5py
