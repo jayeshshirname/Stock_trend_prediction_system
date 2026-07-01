@@ -13,7 +13,11 @@ import os
 
 plt.style.use("fivethirtyeight")
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder=os.path.join(os.getcwd(), "templates"),
+    static_folder=os.path.join(os.getcwd(), "static")
+)
 
 # Load trained model
 model = load_model('stock_dl_model.h5')
